@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(231, 154, 54);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: #fbab29;
+    width: 300px;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.205);
+}
+
+h2 {
+    color: rgb(40, 35, 45);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 100%;
+
+    margin-top: 2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0.6rem;
+}
+
+form div input { 
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.226);
+    
+    border-radius: 10px;
+    padding: 1rem;
+    outline: none;
+    
+    color: white;
+    font-size: 1rem;
+}
+
+form div input:focus {
+    background-color: rgba(255, 255, 255, 0.226);
+}
+
+form div input::placeholder {
+    color: rgba(255, 255, 255, 0.514);
+}
+
+button { 
+    height: 2.5rem;
+    background-color: rgb(40, 35, 45);
+    
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    
+    border-radius: 10px;
+    
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 1.5rem;
+
+    width: 100%;
+}
+
+.or {
+    width: 100%;
+    height: 1.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lineLeft, .lineRight {
+    background-color: rgb(40, 35, 45);
+    height: 1px;
+    width: 30%;   
+} 
+
+.orLoginWith {
+    width: 40%;    
+    height: 100%;
+    
+    color: rgb(40, 35, 45);
+    font-size: 1rem;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterWith {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 2rem;
+
+    margin-top: 1rem;
+}
+ 
+.enterWith a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+.enterWith .facebook {
+    background-color: rgb(40, 35, 45);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.enterWith .twitter {
+    background-color: rgb(40, 35, 45);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.enterWith img {
+    margin-right: 0.5rem;
+} 
+
+button:hover, .facebook:hover, .twitter:hover {
+    background-color: rgb(30, 26, 34);
+    letter-spacing: 0.5px;
+}
