@@ -24,5 +24,5 @@
 </p>
 
 <p align="center">
-  <img alt="Demo" src="demo-mobile-version2.gif">
+  <img alt="Demo" src="demo-mobile-version2.gif" style="border-radius: 45px">
 </p>
