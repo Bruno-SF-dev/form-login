@@ -8,8 +8,12 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-color: rgb(231, 154, 54);
+    background: linear-gradient(to left, rgb(248, 224, 9), rgb(255, 157, 0));
     height: 100vh;
     width: 100vw;
 
@@ -19,7 +23,8 @@ body {
 }
 
 main {
-    background-color: #fbab29;
+    background-color: #f5d20b;
+    /* width: 100%; */
     width: 300px;
     min-height: 400px;
 
@@ -27,13 +32,14 @@ main {
     flex-direction: column;
     align-items: center;
     
-    padding: 1rem 0.5rem;
+    padding: 1.6rem 0.8rem;
     border-radius: 8px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.205);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.109);
 }
 
 h2 {
     color: rgb(40, 35, 45);
+    font-size: 2.4rem;
 }
 
 form {
@@ -43,45 +49,48 @@ form {
 
     width: 100%;
 
-    margin-top: 2rem;
+    margin-top: 3.2rem;
 }
 
 form div {
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.96rem;
 }
 
 form div input { 
-    height: 2.5rem;
+    height: 4rem;
     background-color: rgba(255, 255, 255, 0.226);
     
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.6rem;
     outline: none;
     
     color: white;
-    font-size: 1rem;
+    font-size: 1.6rem;
+
+    transition-duration: 0.2s;
 }
 
-form div input:focus {
+/* form div input:focus {
     background-color: rgba(255, 255, 255, 0.226);
-}
+} */
 
 form div input::placeholder {
-    color: rgba(255, 255, 255, 0.514);
+    color: rgba(255, 255, 255, 0.876);
 }
 
 button { 
-    height: 2.5rem;
+    height: 4rem;
     background-color: rgb(40, 35, 45);
     
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: white;
     
     border-radius: 10px;
+    outline: none;
     
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -93,14 +102,14 @@ button {
     flex-direction: column;
     align-items: center;
     
-    margin-top: 1.5rem;
+    margin-top: 2.4rem;
 
     width: 100%;
 }
 
 .or {
     width: 100%;
-    height: 1.5rem;
+    height: 2.4rem;
     
     display: flex;
     justify-content: space-between;
@@ -118,7 +127,7 @@ button {
     height: 100%;
     
     color: rgb(40, 35, 45);
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
 
     display: flex;
@@ -131,9 +140,9 @@ button {
     justify-content: space-around;
 
     width: 100%;
-    height: 2rem;
+    height: 3.2rem;
 
-    margin-top: 1rem;
+    margin-top: 1.6rem;
 }
  
 .enterWith a {
@@ -142,7 +151,7 @@ button {
     justify-content: center;
 
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-decoration: none;
 
     width: 40%;
@@ -164,10 +173,63 @@ button {
 }
 
 .enterWith img {
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
 } 
 
 button:hover, .facebook:hover, .twitter:hover {
     background-color: rgb(30, 26, 34);
     letter-spacing: 0.5px;
+}
+
+/* Responsividade */
+
+@media (max-width: 425px) {
+    
+    main {
+        background-color: transparent;
+        box-shadow: none;
+        width: 90%;
+    }
+
+    input, button {
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    input:focus {
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);    
+    }
+}
+
+
+@media (max-width: 320px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+ 
+@media (min-width: 1440px) {
+    
+    html {
+        font-size: calc(calc(1440 / 960) * 62.5%);
+    }
+    
+    main {
+        width: calc(1.5 * 300px);
+        min-height: calc(1.5 * 400px);
+    }
+}
+
+@media (min-width: 2560px) {
+    
+    html {
+        font-size: calc(3 * 62.5%);
+    }
+    
+    main {
+        width: calc(3 * 300px);
+        min-height: calc(3 * 400px);
+    }
 }

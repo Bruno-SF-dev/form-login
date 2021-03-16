@@ -16,6 +16,13 @@
 
 * O método de criar um botão sem usar necessariamento um ``<button></button> `` ou ``<input type="submit">``, mas usando e estilizando a tag âncora ``<a>``
 
+* Primeiro contato com o conceito de resposividade, usando <em>Media Queries</em> e os <em>Breakpoints</em>. Entendimento sobre o uso da função CSS ``calc()`` e das unidades de medida ``rem`` e ``%``
+
 ## Demonstração
-![Demonstration Image](demo.png)
-![Demonstration Gif](demo.gif)
+<p align="center">
+  <img alt="Demo" src="demo-version2.gif">
+</p>
+
+<p align="center">
+  <img alt="Demo" src="demo-mobile-version2.gif">
+</p>
